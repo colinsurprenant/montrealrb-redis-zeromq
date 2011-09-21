@@ -13,6 +13,7 @@ These examples have been tested under JRuby 1.6.4, OSX 1.6.8, Redis 2.2.13 and z
 ## Usage
 
 start each example using:
+
     $ruby <example>.rb -v start
 
 ## Author
