@@ -10,6 +10,11 @@ These examples have been tested under JRuby 1.6.4, OSX 1.6.8, Redis 2.2.13 and z
  - the Redis examples requires the [redis gem][redis]
  - the zeromq example requires the [ffi-rzmq gem][ffi-rzmq]
 
+## Usage
+
+start each example using:
+    $ruby <example>.rb -v start
+
 ## Author
 Colin Surprenant, [@colinsurprenant][twitter], [colin.surprenant@needium.com][needium], [colin.surprenant@gmail.com][gmail], [http://github.com/colinsurprenant][github]
 
