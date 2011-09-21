@@ -2,7 +2,7 @@ require 'rubygems'
 require 'raad'
 require 'redis'
 
-class RedisQueueSubscriber
+class RedisQueueSubscriber1
 
   def initialize
     @redis_options = {:host => 'localhost', :port => 6379}
@@ -11,10 +11,10 @@ class RedisQueueSubscriber
   end
 
   def start
-    Raad::Logger.info("starting RedisQueueSubscriber using #{@redis_options.inspect}")
+    Raad::Logger.info("starting RedisQueueSubscriber1 using #{@redis_options.inspect}")
     while !Raad.stopped?
       result = @redis.blpop(@queue, timeout = 0)
-      Raad::Logger.debug("RedisQueueSubscriber received=#{result.inspect}") if result
+      Raad::Logger.debug("RedisQueueSubscriber1 received=#{result.inspect}") if result
     end
   end
 
